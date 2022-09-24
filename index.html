@@ -8,7 +8,11 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="stylesheet"
+        href="https://techsolutionshere.com/wp-content/themes/techsolution/assets/blog-post-css-js/meanmenu.css">
+
+    <link rel="stylesheet" href="./css/style.css">
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
@@ -17,16 +21,16 @@
 </head>
 
 <body>
-    <header clas="container">
-        <div class="row">
+    <header class="container-fluid">
+        <div class=" row bg-black">
             <div class="col-4">
                 <!-- logo -->
-                <img src="./img/logo.jpeg" height="100%" alt="Logo de la empresa">
+               
+                <a href=".\"><h1 class="text-light">FRI-TECH </h1></a>
             </div>
             <!-- navegación -->
             <nav class="navbar navbar-expand-lg col-6">
-                <div class="container-fluid">
-
+                <div>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -35,33 +39,91 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                                <a class="nav-link active text-warning" aria-current="page" href="#"><h5>Inicio</h5></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link border 1" href="#">Nosotros</a>
+                                <a class="nav-link text-light" href="#"><h5>Nosotros</h5></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link border 1" href="#">servicios</a>
+                                <a class="nav-link text-light" href="#"><h5>Servicios</h5></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contacto</a>
+                                <a class="nav-link text-light" href="#"><h5>Productos</h5></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#"><h5>Contacto</h5></a>
                             </li>
                         </ul>
                     </div>
                     <!-- fin navegación -->
-                    <!-- icono whatsapp -->
-                    <div class="col-1">
-                        <img src="./img/whatsapp.png" alt="icono whatsapp">
-                    </div>
                 </div>
             </nav>
-            <div class="row">
-                <div clas="col-12">
-                    <img src="./img/servers.jpg">
-                </div>
+            <!-- icono whatsapp -->
+            <div class="col-2">
+                <a href="./"><img src="./img/whatsapp.png" alt="icono whatsapp"></a>
             </div>
         </div>
     </header>
+    <main id="main" class="container-fluid">
+        <figure class="row">
+            <img class="col-12" src="./img/servers.jpg" height="450px" alt="Imagen de fondo">
+        </figure>
+        <figcaption>
+            <h2 class="text-warning bg-black te">DISTRIBUIDORES DE ARTÍCULOS DE INFORMÁTICA </h2>
+            <h2 class="text-warning bg-black">SEGURIDAD Y TELECOMUNICACIONES</h2>
+            <h1 class="text-danger strong bg-black">DE ALTA TECNOLOGÍA.</h1>
+        </figcaption>
+        <div id="chica"><img src="./img/chica.png" width=100%></div>
+
+
+        <div class="row bg-black align-content-center">
+
+            <span class="col-2"></span>
+            <h5 class="col-2 text-warning">PRECIO</h5>
+            <h5 class="col-2 text-warning">....</h5>
+            <h5 class="col-2 text-warning">SERVICIO</h5>
+            <h5 class="col-2 text-warning">....</h5>
+            <h5 class="col-2 text-warning">CALIDAD</h5>
+        </div>
+
+        <div>
+            <H3 class="texto_seccion text-warning">PRODUCTOS</H3>
+        </div>
+        <div class="row">
+
+            <div class="col-3">
+                <div><img src="./img/iconos/cableado.png"></div>
+                <div>Cableado Estructurado</div>
+            </div>
+            <div class="col-3">
+                <div><img src="./img/iconos/networking.png"></div>
+                <div>Networking</div>
+                </div>
+            <div class="col-3">
+                <div><img src="./img/iconos/seguridad.png"></div>
+                <div>Seguridad</div>
+            </div>
+            <div class="col-3">
+               <div> <img src="./img/iconos/racks.png"></div>
+               <div>PC / Notebooks</div>
+            
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 ali">
+                <div><img src="./img/iconos/ups.png"></div>
+                <div>UPS</div>
+            
+            </div>
+            <div class="col-6"><img src="./img/iconos/cableado.png"></div>
+        </div>
+
+    </main>
+    <footer>FRI-TECH
+        Pozos del combate 3458- Puerto Madero
+        (CP 3434)
+        114455-4543
+        info@FRI-TECH.com</footer>
 </body>
 
 </html>
