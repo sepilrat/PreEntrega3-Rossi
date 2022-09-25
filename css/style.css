@@ -16,8 +16,6 @@ figcaption {
   padding-left: 20px;
 }
 
-
-
 #chica {
   position: absolute;
   left: 600px;
@@ -29,15 +27,25 @@ figcaption {
 /* FIN para la imagen del main y su texto superpuesto */
 
 .texto_seccion {
-    text-align: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-  #main{
-    padding-top: 0px;
-    padding-left: 0%;
-    padding-right: 0%;
-  }
-  a{
-    text-decoration: none;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+#main {
+  padding-top: 0px;
+  padding-left: 0%;
+  padding-right: 0%;
+}
+a {
+  text-decoration: none;
+}
+
+#caption_servicio{
+    padding-top: 100px;
+}
+footer {
+   
+  margin-left: 10px;
+  background-color: black;
+  color: white;
 }
