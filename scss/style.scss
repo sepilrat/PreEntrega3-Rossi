@@ -1,0 +1,59 @@
+
+// Include any default variable overrides here (though functions won't be available)
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+
+/* para la imagen del main y su texto superpuesto */
+  figure {
+    margin: 0;
+    display: inline-block;
+    position: relative;
+    opacity: 0.7;
+    filter: alpha(opacity=90);
+  }
+  
+  figcaption {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 90%;
+    padding: 20%;
+    padding-left: 20px;
+  }
+  
+  #chica {
+    position: absolute;
+    left: 600px;
+    bottom: 52px;
+    width: 50%;
+    padding: 0%;
+    margin-right: 0%;
+  }
+  /* FIN para la imagen del main y su texto superpuesto */
+  
+  .texto_seccion {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  #main {
+    padding-top: 0px;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+  a {
+    text-decoration: none;
+  }
+  
+  #caption_servicio{
+      padding-top: 100px;
+  }
+  footer {
+     
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+  }
