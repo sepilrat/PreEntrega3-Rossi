@@ -1,59 +1,143 @@
-
 // Include any default variable overrides here (though functions won't be available)
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-// Then add additional custom code here
+header {
+  position: fixed;
+  z-index: 1;
+}
 
 /* para la imagen del main y su texto superpuesto */
-  figure {
-    margin: 0;
-    display: inline-block;
-    position: relative;
-    opacity: 0.7;
-    filter: alpha(opacity=90);
-  }
-  
-  figcaption {
+.main {
+  position: relative;
+  display: block;
+
+  .main__text {
     position: absolute;
-    left: 0px;
-    bottom: 0px;
-    width: 90%;
-    padding: 20%;
-    padding-left: 20px;
+    top: 30%;
+    left: 20%;
+    animation: fadeIn 5s;
   }
-  
-  #chica {
+
+  .main_first_image {
+    width: 100%;
+    height: 400px;
+
+  }
+
+}
+
+//contenedor servicios
+.main_services {
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 50%;
+
+  }
+
+  .main_services_text {
     position: absolute;
-    left: 600px;
-    bottom: 52px;
-    width: 50%;
-    padding: 0%;
-    margin-right: 0%;
+    top: 10%;
+    right: 50%;
+    left: 20%;
+    background-color: #fff;
+    padding: 5px;
+    
   }
-  /* FIN para la imagen del main y su texto superpuesto */
-  
-  .texto_seccion {
-    text-align: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
+
+}
+
+//Iconos de productos
+.item_product {
+
+  &:hover {
+    transform: translate(1rem);
+
   }
-  #main {
-    padding-top: 0px;
-    padding-left: 0%;
-    padding-right: 0%;
+}
+
+.texto_seccion {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+footer {
+
+  margin-left: 10px;
+  margin-top: 10px;
+  background-color: black;
+  color: white;
+}
+
+.main_contacto {
+  position: relative;
+  background-image: url(../img/proyectos.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 400px;
+}
+.div_transparente {
+  position: absolute;
+  right: 0px;
+  background-color:white;
+  z-index: 0;
+  opacity: 0.8;
+
+  span{
+    color: #fff;
   }
-  a {
-    text-decoration: none;
+}
+
+.contact_div_transparente {
+  position: absolute;
+  bottom: 20px;
+  right: 0px;
+  background-color:black;
+  z-index: 0;
+  opacity: 0.8;
+
+  span{
+    color: #fff;
   }
-  
-  #caption_servicio{
-      padding-top: 100px;
+
+  input {
+    width: 100%;
   }
-  footer {
-     
-    margin-left: 10px;
-    margin-top: 10px;
-    background-color: black;
-    color: white;
+  textarea{
+    width: 100%;
   }
+}
+.services{
+  position: relative;
+  background-image: url(../img/servicio.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 400px;
+}
+.main_services_text {
+  position: absolute;
+  top: 10%;
+  right: 50%;
+  left: 20%;
+  background-color: #fff;
+  padding: 5px;
+}
+.logi_service_text{
+  position: absolute;
+  top: 10%;
+  right: 0%;
+  background-color: #fff;
+  padding: 5px;
+}
+.divisor{
+  height: 20px;
+}

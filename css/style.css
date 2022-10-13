@@ -8381,49 +8381,104 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 
+header {
+  position: fixed;
+  z-index: 1; }
+
 /* para la imagen del main y su texto superpuesto */
-figure {
-  margin: 0;
-  display: inline-block;
+.main {
   position: relative;
-  opacity: 0.7;
-  filter: alpha(opacity=90); }
+  display: block; }
+  .main .main__text {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    animation: fadeIn 5s; }
+  .main .main_first_image {
+    width: 100%;
+    height: 400px; }
 
-figcaption {
-  position: absolute;
-  left: 0px;
-  bottom: 0px;
-  width: 90%;
-  padding: 20%;
-  padding-left: 20px; }
+.main_services {
+  position: relative; }
+  .main_services img {
+    width: 100%;
+    height: 50%; }
+  .main_services .main_services_text {
+    position: absolute;
+    top: 10%;
+    right: 50%;
+    left: 20%;
+    background-color: #fff;
+    padding: 5px; }
 
-#chica {
-  position: absolute;
-  left: 600px;
-  bottom: 52px;
-  width: 50%;
-  padding: 0%;
-  margin-right: 0%; }
+.item_product:hover {
+  transform: translate(1rem); }
 
-/* FIN para la imagen del main y su texto superpuesto */
 .texto_seccion {
   text-align: center;
   padding-top: 40px;
   padding-bottom: 40px; }
 
-#main {
-  padding-top: 0px;
-  padding-left: 0%;
-  padding-right: 0%; }
-
 a {
   text-decoration: none; }
-
-#caption_servicio {
-  padding-top: 100px; }
 
 footer {
   margin-left: 10px;
   margin-top: 10px;
   background-color: black;
   color: white; }
+
+.main_contacto {
+  position: relative;
+  background-image: url(../img/proyectos.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 400px; }
+
+.div_transparente {
+  position: absolute;
+  right: 0px;
+  background-color: white;
+  z-index: 0;
+  opacity: 0.8; }
+  .div_transparente span {
+    color: #fff; }
+
+.contact_div_transparente {
+  position: absolute;
+  bottom: 20px;
+  right: 0px;
+  background-color: black;
+  z-index: 0;
+  opacity: 0.8; }
+  .contact_div_transparente span {
+    color: #fff; }
+  .contact_div_transparente input {
+    width: 100%; }
+  .contact_div_transparente textarea {
+    width: 100%; }
+
+.services {
+  position: relative;
+  background-image: url(../img/servicio.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 400px; }
+
+.main_services_text {
+  position: absolute;
+  top: 10%;
+  right: 50%;
+  left: 20%;
+  background-color: #fff;
+  padding: 5px; }
+
+.logi_service_text {
+  position: absolute;
+  top: 10%;
+  right: 0%;
+  background-color: #fff;
+  padding: 5px; }
+
+.divisor {
+  height: 20px; }
