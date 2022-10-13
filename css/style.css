@@ -8388,7 +8388,8 @@ header {
 /* para la imagen del main y su texto superpuesto */
 .main {
   position: relative;
-  display: block; }
+  display: block;
+  padding-top: 90px; }
   .main .main__text {
     position: absolute;
     top: 30%;
